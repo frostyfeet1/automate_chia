@@ -42,7 +42,7 @@ echo "[*] ceka se da drugi plot zavrsi"
 echo "[*] Plot 2 zavrsio ponovo pokrecem"
 start powershell {"C:\Users\Ploter02\Desktop\F2.ps1"}
 start-sleep -s 60
-$drugi = tasklist | Select-String -CaseSensitive -SimpleMatch chia   | Select-String -notmatch $prvi | Select-String -notmatch $treci |Select-String -notmatch $cetvrti |Select-String -notmatch $sesti Select-String -notmatch $peti | Select-Object -First 1 |Foreach {"$(($_ -split '\s+',4)[1..1])"}
+$drugi = tasklist | Select-String -CaseSensitive -SimpleMatch chia   | Select-String -notmatch $prvi | Select-String -notmatch $treci |Select-String -notmatch $cetvrti |Select-String -notmatch $sesti| Select-String -notmatch $peti | Select-Object -First 1 |Foreach {"$(($_ -split '\s+',4)[1..1])"}
 }
 echo "Pusi kurac vojo";
 #promeni da drugi plot pid iskljucuje ostale pid od plotova

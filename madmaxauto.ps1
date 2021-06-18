@@ -36,7 +36,7 @@ break
 }
 }
 #posalji mail
-#stavi svoje
+#stavi svoje gmail
 $From = "snederemail"
 $To = "reciveremail"
 $Subject = "Dodirni me,Promeni me"

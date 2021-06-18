@@ -36,15 +36,16 @@ break
 }
 }
 #posalji mail
-#stavi mikijevo
-$From = "filippp2002@gmail.com"
-$To = "filippp2002@gmail.com"
+#stavi svoje
+$From = "snederemail"
+$To = "reciveremail"
 $Subject = "Dodirni me,Promeni me"
 $Body = "GUBIS NOVAC !!!!!!!!!!!!!!!!!"
 $SMTPServer = "smtp.gmail.com"
 $SMTPPort = "587"
 
-#napravi mikijeve sifre
+#napravi  sifre
+#nparavi cres.txt file u diretrorijumu gde je skripta i mad max
 $username   = (Get-Content -Path '.\creds.txt')[0]
 $password   = (Get-Content -Path '.\creds.txt')[1]
 $secstr     = New-Object -TypeName System.Security.SecureString

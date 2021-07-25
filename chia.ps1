@@ -127,7 +127,7 @@ $peti = tasklist | Select-String -CaseSensitive -SimpleMatch chia   | Select-Str
 }
 
 echo "5 process is : $peti"
-#start-sleep -s 5
+
 if ($start -eq 1)
 { 
 start-sleep -s 2400
@@ -154,7 +154,7 @@ $sesti = tasklist | Select-String -CaseSensitive -SimpleMatch chia   | Select-St
 }
 echo "6th process is : $sesti"
 
-#odavde provera
+
 
 $test1 = [System.Convert]::ToInt32($prvi,10)
 $nerad1 = Get-Process -Id $test1 -ErrorAction SilentlyContinue
@@ -164,7 +164,7 @@ while (!($nerad1 -eq $null)) {
 $nerad1 = Get-Process -Id $test1 -ErrorAction SilentlyContinue
 
     }   
-#
+
 echo "[*] 1st plot has finished"
 $start = 0
 }
